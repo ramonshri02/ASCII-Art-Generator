@@ -6,7 +6,7 @@ Project Description : Making a video using ASCII characters
 
 Run the project in terminal using the command - python3 asciiVideo.py
 
-Project theory - Converting a video into ASCII charactered video using python.
+Project theory - Converting a video into ASCII encoded string video using python.
 
 So the code goes like this - 
 
