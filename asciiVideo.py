@@ -14,7 +14,7 @@ def videoToFrames(vidFile):
 	vidcap = cv2.VideoCapture("Video1.mp4")									    # Accessing the source video file
 	sourceFPS = vidcap.get(cv2.CAP_PROP_FPS)									# Determine the FPS of the video file
 	success,image = vidcap.read()												# Read the first frame of the video
-	count = 0																	# Initialize a coutner to track frame numbers
+	count = 0																	# Initialize a counter to track frame numbers
 	while success:																# While successfully reading frames
 		width, height, _ = image.shape											# Get the frame dimensions
 		shrinkRatio = width / maxWidth											# Get the ratio to shrink by to make it the max Width
