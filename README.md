@@ -28,7 +28,7 @@ Learnings from the project :
 3. To convert an colored image into greyscale image using python.
 4. To convert a video into ASCII encoded strings video using python
 
-Video demo of the project : Google drive link - 
+Video demo of the project : Google drive link - https://drive.google.com/file/d/1iiy0Ydc760pnuriVbT-YVBwMrDyLGrt5/view?usp=sharing
 
 References used while making the project: https://www.analyticsvidhya.com/blog/2021/03/grayscale-and-rgb-format-for-storing-images/
 https://techtutorialsx.com/2021/04/29/python-opencv-splitting-video-frames/
