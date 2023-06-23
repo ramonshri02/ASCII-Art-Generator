@@ -6,12 +6,12 @@ The ASCII Image Converter is a Python-based project that allows you to convert i
 This project takes advantage of ASCII characters to create a visual representation of images using various shades of gray. By mapping different ASCII characters to different levels of brightness, the converter can transform an image into a visually similar ASCII art representation.
 
 ## Usage
-Place the image file you want to convert into the project directory.
-Run the ascii_image_converter.py script:
+* Place the image file you want to convert into the project directory.
+* Run the ascii_image_converter.py script:
 python ascii_image_converter.py
-Follow the on-screen instructions to select the image file and adjust conversion settings.
-Once the conversion is complete, the ASCII art will be displayed in your terminal.
-Optionally, you can save the ASCII art as a text file by entering 'Y' when prompted.
+* Follow the on-screen instructions to select the image file and adjust conversion settings.
+* Once the conversion is complete, the ASCII art will be displayed in your terminal.
+* Optionally, you can save the ASCII art as a text file by entering 'Y' when prompted.
 
 The program uses the OpenCV and Pillow libraries to convert a video into an ASCII art video. It consists of the following functions:
 
