@@ -15,13 +15,13 @@ python ascii_image_converter.py
 
 The program uses the OpenCV and Pillow libraries to convert a video into an ASCII art video. It consists of the following functions:
 
-videotoFrames(video_file): This function takes a video file as input and splits it into individual frames. Each frame is assigned a name, and the height and width of the frame are obtained.
+* videotoFrames(video_file): This function takes a video file as input and splits it into individual frames. Each frame is assigned a name, and the height and width of the frame are obtained.
 
-imgtoASCII(frame, frame_name): This function converts each frame into ASCII art. It assigns characters to each pixel shade in the grayscale image based on intensity. The resulting ASCII art frames are stored as character codes.
+* imgtoASCII(frame, frame_name): This function converts each frame into ASCII art. It assigns characters to each pixel shade in the grayscale image based on intensity. The resulting ASCII art frames are stored as character codes.
 
-stringtoImage(ascii_frames, frame_names): This function creates new images using the ASCII art frames generated in the previous step. It adds the ASCII art as text to each image, allowing customization of font and background color. The images are saved to the local disk.
+* stringtoImage(ascii_frames, frame_names): This function creates new images using the ASCII art frames generated in the previous step. It adds the ASCII art as text to each image, allowing customization of font and background color. The images are saved to the local disk.
 
-imagesToMovie(filenames, video_name): This function stacks the ASCII art images together to create a single ASCII art video. It reads each frame and writes them into a video file. The resulting video is saved to the local disk.
+* imagesToMovie(filenames, video_name): This function stacks the ASCII art images together to create a single ASCII art video. It reads each frame and writes them into a video file. The resulting video is saved to the local disk.
 All these functions are called from the main() function, which orchestrates the entire process.
 
 By combining these functions, the program takes a video file as input, converts it into ASCII art frames, creates ASCII art images, and finally generates an ASCII art video.
