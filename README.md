@@ -5,23 +5,26 @@ The ASCII Image Converter is a Python-based project that allows you to convert i
 
 This project takes advantage of ASCII characters to create a visual representation of images using various shades of gray. By mapping different ASCII characters to different levels of brightness, the converter can transform an image into a visually similar ASCII art representation.
 
-Run the project in terminal using the command - python3 asciiVideo.py
+## Usage
+Place the image file you want to convert into the project directory.
+Run the ascii_image_converter.py script:
+python ascii_image_converter.py
+Follow the on-screen instructions to select the image file and adjust conversion settings.
+Once the conversion is complete, the ASCII art will be displayed in your terminal.
+Optionally, you can save the ASCII art as a text file by entering 'Y' when prompted.
 
-Project theory - Converting a video into ASCII encoded string video using python.
+The program uses the OpenCV and Pillow libraries to convert a video into an ASCII art video. It consists of the following functions:
 
-So the code goes like this - 
+videotoFrames(video_file): This function takes a video file as input and splits it into individual frames. Each frame is assigned a name, and the height and width of the frame are obtained.
 
-Firstly we use OpenCV and Pillow libraries for implementing this program.
+imgtoASCII(frame, frame_name): This function converts each frame into ASCII art. It assigns characters to each pixel shade in the grayscale image based on intensity. The resulting ASCII art frames are stored as character codes.
 
-To begin with we use a function called videotoFrames() where we're taking a video file as an input and splitting the video into many frames and assigning names to each of the frame and also we're getting the size(height and width of the frame) of each of the frames.
+stringtoImage(ascii_frames, frame_names): This function creates new images using the ASCII art frames generated in the previous step. It adds the ASCII art as text to each image, allowing customization of font and background color. The images are saved to the local disk.
 
-Now using another function called imgtoASCII() we get the frames that are splitted in the previous function and assign characters to each of the pixel shades ranging from 0 - 255 in the greyscale image for every row and every column of a single frame. The characters are assigned according to intensity of the shade. 
+imagesToMovie(filenames, video_name): This function stacks the ASCII art images together to create a single ASCII art video. It reads each frame and writes them into a video file. The resulting video is saved to the local disk.
+All these functions are called from the main() function, which orchestrates the entire process.
 
-Next in the stringtoImage() function we pass the frames that are converted as Character codes in the previous function and the corressponding frame names as arguments. In this function firstly we create a blank image and add the texts that are stored as strings in the previous function to each of the new images that we want to create. We also provide the font of our choice and also the background color that we want in our final output video. Atlast we are saving the images in the local disk.
-
-Now, the only process that's remaining is to stack all the images together to make it into a single ASCII video. For this we use imagesToMovie() function where we pass filenames and the video name of our choice as arguments. Here the function is reading each of the frame and writes every frame into the video. Finally we save the video in our local disk !
-
-All the functions are called from the main() function.
+By combining these functions, the program takes a video file as input, converts it into ASCII art frames, creates ASCII art images, and finally generates an ASCII art video.
 
 Learnings from the project :
 1. How images are stored in a computer memory.
