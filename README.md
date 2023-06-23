@@ -1,8 +1,9 @@
-# projectACM
+# Project Name: Asciify : ASCII Art Generator
+## Project Description
 
-Project's Title : ASCII Art Generator
+The ASCII Image Converter is a Python-based project that allows you to convert images into ASCII art and display them in your terminal. ASCII (American Standard Code for Information Interchange) is a widely used character encoding format that represents text and symbols using a set of 128 standard characters.
 
-Project Description : Making a video using ASCII characters
+This project takes advantage of ASCII characters to create a visual representation of images using various shades of gray. By mapping different ASCII characters to different levels of brightness, the converter can transform an image into a visually similar ASCII art representation.
 
 Run the project in terminal using the command - python3 asciiVideo.py
 
